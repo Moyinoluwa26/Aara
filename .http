@@ -1,0 +1,7 @@
+PUT  http://localhost:3000/post/6643dfa19c4570cb972df2c6
+Content-Type: application/json
+
+{
+  "title": "One and Half Post",
+  "content": "This is the post after one and before two."
+}
