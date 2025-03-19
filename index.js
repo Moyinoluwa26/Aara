@@ -8,10 +8,12 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const authRoute = require('./routes/user');
 const postRoute = require('./routes/post');
+const path = require("path");
 
+app.use(express.static(path.join(__dirname, "public")));
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 app.use(cors());
 app.use(bodyParser.json());

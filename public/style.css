@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    color: #007bff;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+ul {
+    text-align: left;
+    padding-left: 0;
+    list-style: none;
+}
+
+ul li {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #007bff;
+    color: white;
+}
+
+.coming-soon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.2);
+    animation: fadeIn 1.2s ease-in-out;
+
+    /* Added margin-top & margin-bottom for better spacing */
+    margin: 50px auto;
+    max-width: 80%;
+    /* Makes it responsive */
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Query for Smartphones */
+@media (max-width: 600px) {
+    .coming-soon {
+        height: auto;
+        /* Adjusts height dynamically */
+        font-size: 1.5rem;
+        /* Smaller font size for better readability */
+        padding: 30px;
+        /* Adds more padding for spacing */
+        max-width: 90%;
+        /* Uses more screen space on small devices */
+    }
+
+    .coming-soon h1 {
+        font-size: 1.8rem;
+        /* Reduced font size on mobile */
+    }
+
+
+}

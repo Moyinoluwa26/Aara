@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ Management Web Server</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Aaraa Web Server</h1>
+        <p>Welcome to the Aaraa Web Server! This application is built with <strong>React, Node.js, Express, and
+                MongoDB</strong> to efficiently manage the Api Operations .</p>
+
+
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>✅ <strong>RESTful API</strong> for structured data communication</li>
+            <li>✅ <strong>MongoDB & Mongoose</strong> for efficient database management</li>
+            <li>✅ <strong>Express & Node.js</strong> for a robust backend</li>
+            <li>✅ <strong>React</strong> for a dynamic frontend</li>
+            <li>✅ <strong>Authentication & Security</strong> (bcrypt, JWT, CORS)</li>
+            <li>✅ <strong>Development Tools</strong> (dotenv, nodemon, body-parser)</li>
+        </ul>
+
+        <h2>API Endpoints</h2>
+        <div class="coming-soon">
+            <h1>🚀 Coming Soon 🚀</h1>
+            <h2>Descriptional Page Stay tuned!</h2>
+        </div>
+        <table>
+            <tr>
+                <th>Method</th>
+                <th>Endpoint</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>GET</td>
+                <td>/</td>
+                <td>This Displays the Description to the Services</td>
+            </tr>
+            <tr>
+                <td>GET</td>
+                <td>/user/:id</td>
+                <td>This will be used to get Owner's own Posts as it can also be used to view any other Users own Posts
+                    . It can be used to display profile Contents</td>
+            </tr>
+            <tr>
+                <td>POST</td>
+                <td>/auth/signup</td>
+                <td>This Creates aUser to the Database</td>
+            </tr>
+            <tr>
+                <td>POST</td>
+                <td>/auth/login</td>
+                <td>This gets users from the database and hashedPassowrd that will be further validated by comparing it
+                    to the suplied body.password. Once, validated , it returns a Token that you use to in the
+                    req.header("authorization") and can be stored in whatever facilities you choose from LocalStorage
+                    solution , Caching to stateful teachnologies like Redux </td>
+            </tr>
+            <tr>
+                <td>GET</td>
+                <td>/post/</td>
+                <td>This will get all the posts in our database and show them like a Social Media Home feed</td>
+            </tr>
+            <tr>
+                <td>GET</td>
+                <td>/post/:id</td>
+                <td> This will take you to the particular Post and It's Information alone . You can use it to display a
+                    single Post page and It's Components like, comments, likes et.c</td>
+            </tr>
+            <tr>
+                <td>POST</td>
+                <td>/post/</td>
+                <td> Used to create a post . Here will have pass the Token to the req.header for the middleware to pass
+                    the user as valid </td>
+            </tr>
+
+            <tr>
+                <td>PUT</td>
+                <td>/post/:id</td>
+                <td> This is Used to update a single post . Here you pass the pathname the post.id parameter and also
+                    verify the Token . It will return a newly updated database element for that post.id and will ne
+                    available for the UI on refresh according the state management you Use. </td>
+            </tr>
+            <tr>
+                <td>DELETE</td>
+                <td>/post/:id</td>
+                <td> This is used to delete a post(single) . It will also require the psot.id parameter be passed to the
+                    route. Changes will reflect in the UI on refresh acording to your state management technology </td>
+            </tr>
+        </table>
+
+        <p><strong>Technology Stack:</strong> React, Node.js, Express.js, MongoDB, bcrypt, JWT, CORS, dotenv,
+            body-parser, nodemon.</p>
+    </div>
+</body>
+
+</html>
